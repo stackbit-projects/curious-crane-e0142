@@ -1,0 +1,34 @@
+stackbitVersion: ~0.3.0
+ssgName: hugo
+publishDir: public
+dataDir: data
+pagesDir: content
+assets:
+  referenceType: static
+  staticDir: static
+  uploadDir: assets
+  publicPath: /
+models:
+  social:
+    type: data
+    label: Social
+    file: beautifulhugo/social.toml
+    fields:
+      - type: list
+        name: social_icons
+        label: Social Icons
+        items:
+          type: object
+          fields:
+            - type: string
+              name: id
+              label: Id
+            - type: string
+              name: url
+              label: Url
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: icon
+              label: Icon
